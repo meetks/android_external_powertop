@@ -14,3 +14,12 @@ This branch is based of the cynogenmod powetop branch. Build a standalone toolch
 
 Android standalone toolchain can be built using these links 
 http://www.kandroid.org/ndk/docs/STANDALONE-TOOLCHAIN.html
+
+1293  export CC=arm-linux-androideabi-gcc
+ 1295  export SYSROOT=~/code/ndk/android-ndk-r10e/~/code/my-android-toolchain/sysroot/^C
+ 1296  export SYSROOT=~/code/ndk/android-ndk-r10e/~/code/my-android-toolchain/sysroot/
+ 1466  export PATH=~/code/ndk/android-ndk-r10e/~/code/my-android-toolchain/bin/:$PATH
+ 1468  export CC=arm-linux-androideabi-gcc
+ 1496  export LD=/home/seva/code/ndk/android-ndk-r10e/~/code/my-android-toolchain/arm-linux-androideabi-ld -sysroot=/home/seva/code/ndk/android-ndk-r10e/~/code/my-android-toolchain/sysroot/
+ 1497  export LD=/home/seva/code/ndk/android-ndk-r10e/~/code/my-android-toolchain/arm-linux-androideabi-ld --sysroot=/home/seva/code/ndk/android-ndk-r10e/~/code/my-android-toolchain/sysroot/
+ 1498  export LD="/home/seva/code/ndk/android-ndk-r10e/~/code/my-android-toolchain/arm-linux-androideabi-ld --sysroot=/home/seva/code/ndk/android-ndk-r10e/~/code/my-android-toolchain/sysroot/"
