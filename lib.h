@@ -26,7 +26,7 @@
 #define INCLUDE_GUARD_LIB_H
 
 #ifndef DISABLE_I18N
-#include <libintl.h>
+//#include <libintl.h>
 #endif
 #include <stdint.h>
 

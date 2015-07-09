@@ -74,7 +74,7 @@ void initialize_tuning(void)
 	add_ethernet_tunable();
 #endif 
 	add_bt_tunable();
-	add_wifi_tunables();
+	//add_wifi_tunables();
 	add_cpufreq_tunable();
 
 	sort_tunables();

@@ -21,7 +21,7 @@ OBJS += calibrate/calibrate.o
 
 OBJS += tuning/tuning.o tuning/tunable.o tuning/sysfs.o tuning/usb.o tuning/runtime.o tuning/bluetooth.o
 #OBJS += tuning/cpufreq.o tuning/ethernet.o tuning/iw.o tuning/wifi.o
-OBJS += tuning/cpufreq.o tuning/iw.o tuning/wifi.o
+OBJS += tuning/cpufreq.o 
 
 
 NL1FOUND := $(shell $(PKG_CONFIG) --atleast-version=1 libnl-1 && echo Y)
@@ -57,7 +57,7 @@ CFLAGS += $(shell $(PKG_CONFIG) --cflags $(NLLIBNAME))
 # ncurses-devel and pciutils-devel 
 #
 
-LIBS += -lpthread -lncurses -lpci -lz -lresolv
+#LIBS += -lpthread -lncurses -lpci -lz -lresolv
 
 HEADERS := cpu/cpu.h
 
@@ -72,7 +72,7 @@ clean:
 	rm -f *.o *~ powertop DEADJOE core.* */*.o */*~ csstoh css.h
 	
 powertop: $(OBJS) $(HEADERS)
-	$(CXX) $(OBJS) $(LIBS) -o powertop
+	$(CXX) $(OBJS) -o powertop
 	@(cd po/ && $(MAKE))
 	
 install: powertop
